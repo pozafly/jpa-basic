@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>JUnit</id>
+          </State>
+          <State>
+            <id>JVM 언어</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 9Java 언어 수준 마이그레이션 지원Java</id>
+          </State>
+          <State>
+            <id>Java 상호운용성 문제Kotlin</id>
+          </State>
+          <State>
+            <id>Java 언어 수준 마이그레이션 지원Java</id>
+          </State>
+          <State>
+            <id>JavadocJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>가시성Java</id>
+          </State>
+          <State>
+            <id>대입 이슈Java</id>
+          </State>
+          <State>
+            <id>리소스 관리Java</id>
+          </State>
+          <State>
+            <id>리플렉티브 액세스Java</id>
+          </State>
+          <State>
+            <id>마이그레이션Kotlin</id>
+          </State>
+          <State>
+            <id>매니페스트</id>
+          </State>
+          <State>
+            <id>메서드 메트릭Groovy</id>
+          </State>
+          <State>
+            <id>메서드 메트릭Java</id>
+          </State>
+          <State>
+            <id>모듈화 문제Java</id>
+          </State>
+          <State>
+            <id>발생할 수 있는 버그Groovy</id>
+          </State>
+          <State>
+            <id>발생할 수 있는 버그Java</id>
+          </State>
+          <State>
+            <id>발생할 수 있는 버그Kotlin</id>
+          </State>
+          <State>
+            <id>보안Java</id>
+          </State>
+          <State>
+            <id>복제 문제Java</id>
+          </State>
+          <State>
+            <id>불필요한 구문Kotlin</id>
+          </State>
+          <State>
+            <id>상속 문제Java</id>
+          </State>
+          <State>
+            <id>선언 중복성Java</id>
+          </State>
+          <State>
+            <id>성능Java</id>
+          </State>
+          <State>
+            <id>숫자 문제Java</id>
+          </State>
+          <State>
+            <id>스레딩 문제Groovy</id>
+          </State>
+          <State>
+            <id>스레딩 문제Java</id>
+          </State>
+          <State>
+            <id>스타일 문제Kotlin</id>
+          </State>
+          <State>
+            <id>오류 처리Java</id>
+          </State>
+          <State>
+            <id>이름 생성 규칙Java</id>
+          </State>
+          <State>
+            <id>이식성Java</id>
+          </State>
+          <State>
+            <id>일반</id>
+          </State>
+          <State>
+            <id>임베디드성능Java</id>
+          </State>
+          <State>
+            <id>장황하거나 중복 코드 구문Java</id>
+          </State>
+          <State>
+            <id>정규식</id>
+          </State>
+          <State>
+            <id>제어 흐름 이슈Groovy</id>
+          </State>
+          <State>
+            <id>제어 흐름 이슈Java</id>
+          </State>
+          <State>
+            <id>직렬화 문제Java</id>
+          </State>
+          <State>
+            <id>추상화 문제Java</id>
+          </State>
+          <State>
+            <id>코드 구문이 혼동될 수 있습니다.Groovy</id>
+          </State>
+          <State>
+            <id>코드 성숙도Java</id>
+          </State>
+          <State>
+            <id>코드 스타일 이슈Java</id>
+          </State>
+          <State>
+            <id>클래스 구조Java</id>
+          </State>
+          <State>
+            <id>클래스 메트릭Java</id>
+          </State>
+          <State>
+            <id>클래스이름 생성 규칙Java</id>
+          </State>
+          <State>
+            <id>테스트 프레임워크JVM 언어</id>
+          </State>
+          <State>
+            <id>패키지 문제Java</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="homebrew-23" project-jdk-type="JavaSDK" />
+</project>

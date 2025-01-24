@@ -5,6 +5,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
+import java.util.List;
+
 public class JpaMain {
 
     public static void main(String[] args) {
@@ -27,16 +29,20 @@ public class JpaMain {
             member.setTeam(team);
             em.persist(member);
 
+            Member member2 = new Member();
+            member2.setName("member2");
+            member2.setTeam(team);
+            em.persist(member2);
+
             em.flush();
             em.clear();
 
             Member findMember = em.find(Member.class, member.getId());
 
-            // Long teamId = findMember.getTeamId();
-            // em.find(Team.class, teamId);
-
-            Team findTeam = findMember.getTeam();
-            System.out.println("findTeam = " + findTeam.getName());
+            List<Member> members = findMember.getTeam().getMembers();
+            for (Member m : members) {
+                System.out.println("member = " + m.getName());
+            }
 
             tx.commit();
         } catch (Exception e) {

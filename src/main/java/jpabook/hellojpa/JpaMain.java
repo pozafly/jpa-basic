@@ -18,7 +18,6 @@ public class JpaMain {
         tx.begin();
 
         try {
-
             // 저장
             Team team = new Team();
             team.setName("TeamA");
@@ -26,22 +25,19 @@ public class JpaMain {
 
             Member member = new Member();
             member.setName("member1");
-            member.setTeam(team);
+            member.changeTeam(team);
             em.persist(member);
 
-            Member member2 = new Member();
-            member2.setName("member2");
-            member2.setTeam(team);
-            em.persist(member2);
+            team.getMembers().add(member);
 
             em.flush();
             em.clear();
 
-            Member findMember = em.find(Member.class, member.getId());
+            Team findTeam = em.find(Team.class, team.getId());
+            List<Member> members = findTeam.getMembers();
 
-            List<Member> members = findMember.getTeam().getMembers();
             for (Member m : members) {
-                System.out.println("member = " + m.getName());
+                System.out.println("m.getName() = " + m.getName());
             }
 
             tx.commit();

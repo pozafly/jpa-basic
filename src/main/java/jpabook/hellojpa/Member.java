@@ -13,12 +13,21 @@ public class Member {
     @Column(name = "USERNAME")
     private String name;
 
-    // @Column(name = "TEAM_ID")
-    // private Long teamId;
+    @Embedded
+    private Period workPeriod;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "TEAM_ID")
-    private Team team;
+    // 주소
+    @Embedded
+    private Address homeAddress;
+
+    // 주소
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "city", column = @Column(name = "WORK_CITY")),
+            @AttributeOverride(name = "street", column = @Column(name = "WORK_STREET")),
+            @AttributeOverride(name = "zipcode", column = @Column(name = "WORK_ZIPCODE")),
+    })
+    private Address workAddress;
 
     public Long getId() {
         return id;
@@ -36,12 +45,19 @@ public class Member {
         this.name = name;
     }
 
-    public Team getTeam() {
-        return team;
+    public Period getWorkPeriod() {
+        return workPeriod;
     }
 
-    public void setTeam(Team team) {
-        this.team = team;
-        // team.getMembers().add(this);
+    public void setWorkPeriod(Period workPeriod) {
+        this.workPeriod = workPeriod;
+    }
+
+    public Address getHomeAddress() {
+        return homeAddress;
+    }
+
+    public void setHomeAddress(Address homeAddress) {
+        this.homeAddress = homeAddress;
     }
 }
